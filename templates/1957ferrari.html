@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+</head>
+<body>
+<nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+        <a href="{% url 'index' %}">
+            <img src="{% static 'images/electric-car.png' %}" alt="">
+        </a>
+    </div>
+</nav>
+<h1 class="mt-5 fw-bold fs-3">1957 Ferrari 250 GT Berlinetta</h1>
+    <div class="content-section">
+        <div class="text-column">
+            <p style="line-height: 30px">Overview: The Ferrari 250 GT Berlinetta is one of the most celebrated Ferrari models, known for its stunning design and impressive racing pedigree. It’s highly valued by collectors for its rarity and performance.</p>
+            <p style="line-height: 30px">Engine: 33.0-liter V12 engine, producing around 240 horsepower.</p>
+            <p style="line-height: 30px">Top Speed: Approximately 145 mph (233 km/h)..</p>
+            <p style="line-height: 30px">Key Features: Elegant Italian styling, lightweight construction, racing success, and high desirability among collectors due to its rarity and performance.</p>
+        </div>
+        <div class="image-column">
+            <img src="{% static 'images/1957 Ferrari 250 GT Berlinetta.jpg' %}" alt="">
+        </div>
+    </div>
+</body>
+</html>

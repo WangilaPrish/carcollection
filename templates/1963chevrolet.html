@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+</head>
+<body>
+<nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+        <a href="{% url 'index' %}">
+            <img src="{% static 'images/electric-car.png' %}" alt="">
+        </a>
+    </div>
+</nav>
+<h1 class="mt-5 fw-bold fs-3">1963 Chevrolet Corvette Sting Ray</h1>
+    <div class="content-section">
+        <div class="text-column">
+            <p style="line-height: 30px">Overview: The 1963 Corvette Sting Ray was a revolutionary model, introducing a new aerodynamic design and a split rear window for the coupe. It’s known for its iconic styling and performance.</p>
+            <p style="line-height: 30px">Engine: 327 cubic inch V8, available in several configurations producing up to 360 horsepower.</p>
+            <p style="line-height: 30px">Top Speed: Approximately 150 mph (241 km/h).</p>
+            <p style="line-height: 30px">Key Features: Split rear window, hidden headlights, and advanced suspension system, making it a groundbreaking design for the time.</p>
+        </div>
+        <div class="image-column">
+            <img src="{% static 'images/1963 Chevrolet Corvette Sting Ray.jpeg' %}" alt="">
+        </div>
+    </div>
+</body>
+</html>
